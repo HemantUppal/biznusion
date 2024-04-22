@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Developer Internship Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Developer Internship Application</h1>
+
+        <form 
+        action="https://formspree.io/f/myyrldbn"
+        method="POST"">
+            <h2>Personal Information</h2>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+    
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+    
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+    
+            <h2>Education</h2>
+            <label for="degree">Degree:</label><br>
+            <input type="text" id="degree" name="degree" required><br><br>
+    
+            <label for="university">University/College:</label><br>
+            <input type="text" id="university" name="university" required><br><br>
+    
+            <label for="major">Major:</label><br>
+            <input type="text" id="major" name="major" required><br><br>
+    
+            <label for="grad_year">Graduation Year:</label><br>
+            <input type="number" id="grad_year" name="grad_year" min="1900" max="2099" required><br><br>
+    
+            <h2>Skills and Qualifications</h2>
+            <label for="skills">Skills:</label><br>
+            <textarea id="skills" name="skills" rows="4" cols="50" required></textarea><br><br>
+    
+            <label for="experience">Experience:</label><br>
+            <textarea id="experience" name="experience" rows="4" cols="50" required></textarea><br><br>
+    
+            <label for="projects">Projects:</label><br>
+            <textarea id="projects" name="projects" rows="4" cols="50"></textarea><br><br>
+    
+            <label for="certifications">Certifications:</label><br>
+            <textarea id="certifications" name="certifications" rows="4" cols="50"></textarea><br><br>
+    
+            <h2>Additional Information</h2>
+            <label for="reference">Reference (Name/Contact):</label><br>
+            <input type="text" id="reference" name="reference"><br><br>
+    
+            <label for="linkedin">LinkedIn Profile:</label><br>
+            <input type="url" id="linkedin" name="linkedin"><br><br>
+    
+            <label for="portfolio">Portfolio/Website:</label><br>
+            <input type="url" id="portfolio" name="portfolio"><br><br>
+    
+            <label for="other_info">Any other information:</label><br>
+            <textarea id="other_info" name="other_info" rows="4" cols="50"></textarea><br><br>
+    
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+</body>
+</html>
